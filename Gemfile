@@ -43,7 +43,7 @@ group :development do
 end
 
 # Use sqlite3 as the database for Active Record
-group: development, :test do
+group :development, :test do
   gem 'sqlite3'
 end
 
