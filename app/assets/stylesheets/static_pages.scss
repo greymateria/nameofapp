@@ -2,41 +2,77 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$font-stack:	Futura, sans-serif;
 
 $primary-color:	#333;
 
+$color-text:	green;
+
+* { 
+	box-sizing: border-box; 
+}
 
 body {
 	position: relative;
-	padding: 51px 10px 10px 10px;
+	background-color: white;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	padding-top: 51px;
+	height: 100%;
 }
 
-.nav {
-	padding-right: 5px;
-		a {
-		color: red;
-		}
-}
+.navbar {
+	background-color: #3fbf80;
+	border-bottom: 1px solid #2c8559;
 
-.projectName a {
+	a {
+	font-family: 'Futura', Helvetica, Arial, sans-serif;
 	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 300ms;
+	-webkit-transition: color 300ms;
+	-moz-transition: color 300ms;
+	}
+
+	a:active {
+	color: #bf3f7e;
+	}	
 }
 
-.footer {
-	color: blue;
+.navbar-inverse .navbar-nav li a {
+  color: #fff;
 }
 
-h1, 
-h2 {
-	font: 100% $font-stack;
+.projectName a:hover,
+#rightul a:hover {
+	color: #2c8559;
 }
 
-h1 {
-	font-size: 3em;
+footer {
+	margin-top: 0px;
+	padding: 10px;
+	background-color: #dcf4e9;
+	color: black;
+	font-family: Georgia, 'Cambria', serif;
+	text-align: right;
 }
 
-h2 {
-	font-size: 1.5em;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Futura', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
 }
+
+p,
+li {
+	font-family: Georgia, 'Cambria', serif;
+}
+
+ul, menu, dir {
+    -webkit-padding-start: 0px;
+}
+
 
