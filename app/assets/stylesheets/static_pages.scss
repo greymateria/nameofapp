@@ -7,6 +7,26 @@ $font-stack:	Futura, sans-serif;
 $primary-color:	#333;
 
 
+body {
+	position: relative;
+	padding: 51px 10px 10px 10px;
+}
+
+.nav {
+	padding-right: 5px;
+		a {
+		color: red;
+		}
+}
+
+.projectName a {
+	color: white;
+}
+
+.footer {
+	color: blue;
+}
+
 h1, 
 h2 {
 	font: 100% $font-stack;
@@ -20,32 +40,3 @@ h2 {
 	font-size: 1.5em;
 }
 
-
-.nav {
-	padding-right: 5px;
-}
-
-
-navbar {
-	ul {
-
-	}
-
-	li {
-
-	}
-
-	a {
-
-	}
-}
-
-
-body {
-	position: relative;
-	padding: 51px 10px 10px 10px;
-}
-
-.projectName a {
-	color: white;
-}
