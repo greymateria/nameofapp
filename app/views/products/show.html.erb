@@ -2,23 +2,43 @@
 
 <div class="container-fluid anchor" id="product-columns">
 	<div class="row">
+<!-- adjust this layout later, similar to index.html.erb -->
 		<div class="col-md-12" id="productName">
+			<p>
+				<strong>Name:</strong>
+			</p>	
 			<h2><%= @product.name %></h2>		
 		</div>
 
-		<div class="col-sm-6 col-md-6" id="productDescription">
+		<div class="col-sm-3 col-md-3" id="productDescription">
 			<p>
 			  <strong>Description:</strong>
 			  <%= @product.description %>
 			</p>			
 		</div>
 
-		<div class="col-sm-6 col-md-6" id="productImage">
+		<div class="col-sm-3 col-md-3" id="productImage">
 			<p>
 			  <strong>Image url:</strong>
 			  <%= @product.image_url %>
 			</p>			
 		</div>
+
+		<div class="col-sm-3 col-md-3" id="productColour">
+			<p>
+		  	<strong>Colour:</strong>
+		  	<%= @product.colour %>
+			</p>
+		</div>
+
+		<div class="col-sm-3 col-md-3" id="productPrice">
+			<p>
+		  	<strong>Colour:</strong>
+		  	<%= @product.price %>
+			</p>
+		</div>		
+
+
 	</div><!-- /.row -->
 </div><!-- /#product-columns -->
 
