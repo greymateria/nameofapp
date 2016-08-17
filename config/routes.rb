@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
+  get 'welcome/shop'
+
+  get 'welcome/about'
+
+  get 'welcome/contact'
+
   resources :products
   get 'static_pages/about'
 

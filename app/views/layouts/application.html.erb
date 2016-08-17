@@ -31,17 +31,16 @@
 				  </button> 	
 
 					<div class="projectName navbar-brand">
-						<a href="index.html">Brand Name</a>  
+						<%= link_to "Brand Name", root_path %>
 					</div><!-- end projectName -->						
 	  		</div><!-- end navbar-header -->
 
 	  		<!-- this is the standard navbar -->
 	  		<div class="navbar-collapse collapse">
-		  		<ul class="nav navbar-nav" id="leftul">
-					</ul>
 					<ul class="nav navbar-nav navbar-right" id="rightul">
-						<li><a id="homelink" href=index.html>About</a></li>
-						<li><a id="homelink" href=index.html>Contact</a></li>						
+						<li><%= link_to "Shop", welcome_shop_path %></li>
+						<li><%= link_to "About", welcome_about_path %></li>
+						<li><%= link_to "Contact", welcome_contact_path %></li>
 					</ul>
 				</div><!-- end navbar-collapse collapse -->	
 
@@ -53,7 +52,7 @@
     <%= yield %>
 
 		<footer>
-		  .&copy; 2016 Brand Name
+		  &copy; 2016 Brand Name
 		</footer>
 
   </body>

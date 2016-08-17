@@ -14,8 +14,6 @@ $color-text:	green;
 body {
 	position: relative;
 	background-color: white;
-	background-repeat: repeat;
-	background-attachment: fixed;
 	padding-top: 41px;
 	height: 100%;
 }
@@ -43,12 +41,22 @@ body {
   color: #fff;
 }
 
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #2c8559;
+}
+
 .projectName a:hover,
 #rightul a:hover {
 	color: #2c8559;
 }
 
 footer {
+	position: fixed;
+	left:0px;
+  bottom:0px;
+  height:40px;
+  width:100%;
 	margin-top: 0px;
 	padding: 10px;
 	background-color: #dcf4e9;

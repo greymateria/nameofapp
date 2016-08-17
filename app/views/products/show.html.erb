@@ -4,9 +4,6 @@
 	<div class="row">
 <!-- adjust this layout later, similar to index.html.erb -->
 		<div class="col-md-12" id="productName">
-			<p>
-				<strong>Name:</strong>
-			</p>	
 			<h2><%= @product.name %></h2>		
 		</div>
 
@@ -14,13 +11,6 @@
 			<p>
 			  <strong>Description:</strong>
 			  <%= @product.description %>
-			</p>			
-		</div>
-
-		<div class="col-sm-3 col-md-3" id="productImage">
-			<p>
-			  <strong>Image url:</strong>
-			  <%= @product.image_url %>
 			</p>			
 		</div>
 
@@ -33,10 +23,17 @@
 
 		<div class="col-sm-3 col-md-3" id="productPrice">
 			<p>
-		  	<strong>Colour:</strong>
+		  	<strong>Price:</strong>
 		  	<%= @product.price %>
 			</p>
-		</div>		
+		</div>
+
+		<div class="col-sm-3 col-md-3" id="productImage">
+			<p>
+			  <strong>Image url:</strong>
+			  <%= @product.image_url %>
+			</p>			
+		</div>				
 
 
 	</div><!-- /.row -->
