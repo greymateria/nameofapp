@@ -14,10 +14,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= csrf_meta_tags %>
-
   </head>
 
-	<body data-spy="scroll" data-target=".navbar">
+	<body>
 		<!--navbar starts here-->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	  	<div class="container-fluid">
@@ -38,7 +37,7 @@
 	  		<!-- this is the standard navbar -->
 	  		<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right" id="rightul">
-						<li><%= link_to "Shop", welcome_shop_path %></li>
+						<li><%= link_to "Shop", products_path %></li>
 						<li><%= link_to "About", welcome_about_path %></li>
 						<li><%= link_to "Contact", welcome_contact_path %></li>
 					</ul>
@@ -54,6 +53,16 @@
 		<footer>
 		  &copy; 2016 Brand Name
 		</footer>
+
+		<!-- ============================= -->
+		<!-- All your JavaScript comes now -->
+		<!-- ============================= -->
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Bootstrap core JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 
   </body>
 </html>
