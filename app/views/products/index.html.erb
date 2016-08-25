@@ -11,11 +11,12 @@
 </div>
 
 <br>
-<!-- commented out, table from 4.1 lesson introduction
+
 <table>
   <thead>
     <tr>
       <th>Name</th>
+      <th>ID</th>
       <th>Description</th>
       <th>Image url</th>
       <th>Image tag</th>
@@ -28,6 +29,7 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
+        <td><%= product.id %></td>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
