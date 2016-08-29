@@ -12,10 +12,10 @@
 #Product.create(:name => "seed-generated product", :description => "I also created this product without using the HTML form!")
 
 Product.create([
-	{ :name => "Cat 1", :description => "A brown cat", :colour => "Brown", :price => 500, :image_url => "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-breed-landing-hero.ashx"},
+	{ :name => "Cat 1", :description => "A brown cat", :colour => "Brown", :price => 400, :image_url => "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-breed-landing-hero.ashx"},
 
 	{ :name => "Cat 2", :description => "An orange cat", :colour => "Orange", :price => 500, :image_url => "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-adult-landing-hero.ashx"},
 
-	{ :name => "Cat 3", :description => "A grey cat", :colour => "Grey", :price => 500, :image_url => "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-senior-landing-hero.ashx"},
+	{ :name => "Cat 3", :description => "A grey cat", :colour => "Grey", :price => 600, :image_url => "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-senior-landing-hero.ashx"},
 ])
 
