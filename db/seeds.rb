@@ -17,8 +17,5 @@ Product.create([
 	{ :name => "Cat 2", :description => "An orange cat", :colour => "Orange", :price => 500, :image_url => "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-adult-landing-hero.ashx"},
 
 	{ :name => "Cat 3", :description => "A grey cat", :colour => "Grey", :price => 500, :image_url => "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-senior-landing-hero.ashx"},
-
-	{ :name => "Cat 4", :description => "A second grey cat", :colour => "Grey", :price => 500, :image_url => "http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-senior-landing-hero.ashx"},
-
 ])
 
