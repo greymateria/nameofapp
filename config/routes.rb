@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
   resources :products
+
+	#  get 'static_pages/index' - root is the home page
+  root 'static_pages#index'
+
   get 'static_pages/about'
 
   get 'static_pages/contact'
-
-	#  get 'static_pages/index' - root is the home page
-  root 'static_pages#landing_page'
 
   # added in 4.3 for app/views/orders
   resources :orders, only: [:index, :show, :create, :destroy] 
