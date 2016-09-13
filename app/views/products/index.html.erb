@@ -2,6 +2,10 @@
 
 <h1>Products</h1>
 
+<!-- temporary link to products/new -->
+<h4><%= link_to "Create New", new_product_path %></h4>
+<br>
+
 <div class="container-fluid">
   <div class="row">
     <%= render @products %>
@@ -10,7 +14,9 @@
 
 <br>
 
-<!-- remove comment to view product table 
+
+
+
 <table class="product-list">
   <thead>
     <tr>
