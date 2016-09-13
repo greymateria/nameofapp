@@ -10,29 +10,32 @@ Find me in app/views/static_pages/contact.html.erb
 <%= flash[:notice] %>
 
 <%= form_tag("/static_pages/thank_you") do %>
-<div class="row">
-  <div class="col-md-4">
-    <div class="form-group">
+
+  <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12" id="contact-form">
+    <div class="form-group col-xs-6" id="name2">
       <%= label_tag :name %>
       <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
     </div>      
-    <div class="form-group">
+    <div class="form-group col-xs-6" id="email">
       <%= label_tag :email, "Email Address" %>
       <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
     </div>
-    <div class="form-group">
+    <div class="form-group col-xs-12">
       <%= label_tag :message %>
       <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
-    </div>      
+    </div>  
+    <div>
+	    <%= submit_tag("Send", class: "btn btn-info") %>
+			<% end %>    
+		</div>	
   </div>
 </div>
-<%= submit_tag "Send" %>   
-<% end %>
 
 
 
 
-<!-- original contact form -->
+
+<!-- original contact form
 <p>Please contact us regarding any questions or concerns you may have with your order. Just send us a message in the form below!</p>
 
 <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12" id="contact-form>
@@ -58,10 +61,11 @@ Find me in app/views/static_pages/contact.html.erb
 			<p id="char-count"></p>
 
 			<button type="submit" class="btn btn-info" id="submitComment">Submit</button>
-		</div><!-- end .form-group -->
+		</div>< end .form-group -->
+<!--
 	</form>
 </div>
-
+-->
 
 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 list-group" id="contact-info">
 
