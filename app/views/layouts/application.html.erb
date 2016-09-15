@@ -17,7 +17,7 @@
   </head>
 
 	<body>
-		<!--navbar starts here-->
+		<!-- navbar starts here -->
 		<nav class="navbar navbar-fixed-top" role="navigation">
 	  	<div class="container-fluid">
 	  		<!-- this is the "hamburger" navbar -->
@@ -40,8 +40,17 @@
 						<li><%= link_to "Shop", products_path %></li>
 						<li><%= link_to "About", static_pages_about_path %></li>
 						<li><%= link_to "Contact", static_pages_contact_path %></li>
+					</ul><!-- / .navbar-collapse collapse -->
 
-					</ul>	
+					<ul class="nav pull-right">
+					  <li>
+					  <% if user_signed_in? %>
+					    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+					  <% else %>
+					    <%= link_to('Login', new_user_session_path) %>
+					  <% end %>
+					  </li>
+					</ul><!-- / .nav pull-right -->			
 
 				<!-- search bar-->
 			  <%= form_tag("/products", method: "get", class: "navbar-form navbar-left") do %>
@@ -56,6 +65,10 @@
 	  	</div><!-- end nav container-fluid -->
 	  	</div><!-- end .container-fluid -->
 		</nav> <!-- end navbar-->
+
+		<!-- Devise gem: flash messages to display a welcome message when you sign in -->
+		<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
 		<!-- where the view files are rendered inside the layout -->
     <%= yield %>

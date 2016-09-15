@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'} 
+                      #overwrites default /users/sign_in to /login and /users/sign_out to /logout 
+  resources :users
   resources :products
 
 	#  get 'static_pages/index' - root is the home page

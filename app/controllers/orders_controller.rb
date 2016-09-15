@@ -1,5 +1,8 @@
 class OrdersController < ApplicationController
 	
+  # cannot access order actions unless signed in
+  before_filter :authenticate_user!
+
   def index
   end
 
