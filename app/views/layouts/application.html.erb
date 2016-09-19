@@ -67,8 +67,14 @@
 		</nav> <!-- end navbar-->
 
 		<!-- Devise gem: flash messages to display a welcome message when you sign in -->
-		<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+		<% if notice %>
+			<div id="notice" class="alert alert-info" role="alert"><%= notice %></div>
+		<% end %>	
+
+		<% if alert %>
+		<div class="alert alert-danger" role="alert"><%= alert %></div>
+		<% end %>
+
 
 		<!-- where the view files are rendered inside the layout -->
     <%= yield %>
@@ -86,6 +92,7 @@
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="app/assets/javascripts/alerts.js"></script>
 
 		<!-- Bootstrap core JS -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
