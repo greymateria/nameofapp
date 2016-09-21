@@ -1,0 +1,43 @@
+<!-- new code in testing for show.html.erb page -->
+
+<p id="notice"><%= notice %></p>
+
+<div id="productName">
+	<h2><%= @product.name %></h2>		
+</div>
+
+<div class="container-fluid anchor" id="product-columns">
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-3 col-md-3 product_image_box">
+		  <%= link_to image_tag(@product.image_url, class: "img-responsive"), product %>			
+		</div><!-- /.product_image_box -->
+
+		<div class="col-xs-12 col-sm-6 col-md-6 product_info_box">
+			<p><strong>Description:</strong><%= @product.description %></p>
+			<p><strong>Colour:</strong><%= @product.colour %></p>
+			<p><strong>Price:</strong><%= @product.price %></p>
+		</div><!-- /.product_info_box -->
+
+		<div class="col-xs-12 col-sm-3 col-md-3 product_action_box">
+			<!-- reserved for quantity select -->
+			<h3>Quantity:</h3>
+			<select class="form-control">
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			</select>
+
+			<!-- reserved for add to cart button -->
+			<button class="btn btn-default" type="submit">Add to Cart</button>
+		</div><!-- /.product_action_box -->
+
+		<div class="col-xs-12 product_comment_box">
+			<h3>Reserved for comment title</h3>
+			<p>Reserved for comment star rating *****</p>
+			<p>Reserved for comment text</p>
+		</div><!-- /.product_comment_box -->
+	</div><!-- /.row -->
+</div><!-- /#product-columns -->		

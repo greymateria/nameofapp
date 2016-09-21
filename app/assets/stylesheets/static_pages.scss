@@ -84,7 +84,6 @@ h2,
 h3,
 h4 {
   font-family: 'Futura', Helvetica, Arial, sans-serif;
-  text-align: center;
   color: black;
 }
 
@@ -300,4 +299,29 @@ h4.edit-pass-email {
 .btn-cancel-account {
   background-color: darkred;
   border-color: black;
+}
+
+
+// Product Show page
+
+.product_info_box {
+	p {
+		padding: 0px;
+		margin: 10px 0px 5px 0px;
+	}
+}
+
+#productPrice {
+	margin-bottom: 20px;
+}
+
+.reviews_area {
+	p {
+		padding: 0px;
+		margin: 10px 0px 5px 0px;
+	}
+}
+
+.product_review {
+	border: 1px solid black;
 }
