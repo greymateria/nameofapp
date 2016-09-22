@@ -21,7 +21,21 @@
 
 			<p><strong>Colour: </strong><%= @product.colour %></h4>
 
+			<p><strong>Average Rating: </strong><div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
 			<p><strong>Description: </strong><%= @product.description %></p>
+
+
+			<!-- added in 5.8 -->
+			<div class="container-fluid">
+
+			  <!-- _new_comment partial -->
+        <div class="row">
+          <%= render(:partial => "new_comment") %>
+        </div>
+      </div>  
+      
+    
 
 			
 			
@@ -44,11 +58,14 @@
 
 		<div class="col-xs-12 reviews_area">
 			<h3>User reviews</h3>
-			<div class="col-xs-12 product_review">
-			  <h4>Reserved for comment title</h4>
-			   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>Reserved for comment star rating / user name
-			  <p>Reserved for comment text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla orci eu massa dignissim, id venenatis turpis pulvinar. Quisque ornare justo eu dui sagittis, vel lacinia sapien pretium. Aliquam a nisi sed mi vehicula tristique.</p>
-			</div><!-- /.user_review -->
-		</div><!-- /.product_reviews -->
-	</div><!-- /.row -->
+
+		  <!-- _comments partial -->
+      <div class="col-xs-12 comments_partial">
+        <%= render(:partial => "comments") %>
+		  </div><!-- /.comments_partial -->
+
+	  </div>  
 </div><!-- /#product-columns -->		
+
+
+
