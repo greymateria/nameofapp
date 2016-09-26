@@ -68,6 +68,11 @@
   <div class="comments_partial">
     <%= render(:partial => "comments") %>
   </div><!-- /.comments_partial -->
+
+  <div class="product-reviews-pagination">
+  	<%= will_paginate @comments %>
+	</div>
+
 </div>  
 
 
