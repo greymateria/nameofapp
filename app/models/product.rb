@@ -2,6 +2,9 @@ class Product < ApplicationRecord
   has_many :orders
   has_many :comments
 
+  #5.9
+  validates :name, presence: true
+
   #custom method for product to return the comment with the highest rating
   def highest_rating_comment
   	comments.rating_desc.first
@@ -13,9 +16,9 @@ class Product < ApplicationRecord
 	end
 
   #used for Raty
-
   def average_rating
     comments.average(:rating).to_f
   end
 
 end
+
