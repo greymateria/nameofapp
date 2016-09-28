@@ -38,7 +38,7 @@
 }
 
 .star-off-png:before {
-  content: "\f006";
+  content: "/images/ratyrate/star-off.png";
 }
 
 .star-half-png:before {
