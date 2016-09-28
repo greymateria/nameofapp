@@ -10,7 +10,6 @@ var refreshRating = function() {
 
 $(document).on('turbolinks:load', function() {
 	refreshRating();
-
 });
 
 // old version
