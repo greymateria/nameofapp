@@ -9,7 +9,7 @@ var refreshRating = function() {
 };
 
 $(document).on('turbolinks:load', function() {
-	refreshRating();
+	refreshRating(); 
 });
 
 // old version
