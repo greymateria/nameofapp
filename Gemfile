@@ -46,7 +46,11 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+# FactoryGirl gem
+  gem "factory_girl_rails", "~> 4.0"
 end
+
+
 
 group :production do
   gem 'pg'
