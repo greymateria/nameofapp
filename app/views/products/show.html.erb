@@ -20,13 +20,19 @@
 						<h4>Price: <%= @product.price %></h4>
 					</div>
 
-					<p><strong>Colour: </strong><%= @product.colour %></p>
 
 					<p><strong>Average Rating: </strong><div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
-					<p><strong>Description: </strong><%= @product.description %></p>
-				</div>	
+					<p><strong>Colour: </strong><%= @product.colour %></p>
 
+
+					<p><strong>Description: </strong><%= @product.description %></p>
+
+					<%= form_tag "/payments/create" do %>
+  					<%= render partial: "shared/stripe_checkout_button" %>
+					<% end %>
+				</div>	
+<!-- 
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<h3>Quantity:</h3>
 					<select class="form-control product_quantity">
@@ -36,10 +42,10 @@
 					  <option>4</option>
 					  <option>5</option>
 					</select>
-					<!-- add to cart button -->
+
 				  <button class="btn btn-default" type="submit">Add to Cart</button>
 				</div> 
-
+-->
 
 
 			<!-- added in 5.8 -->
