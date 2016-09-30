@@ -3,36 +3,36 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 * { 
-	box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 body {
-	background-color: white;
-	padding-top: 41px;
-	height: 100%;
+  background-color: white;
+  padding-top: 41px;
+  height: 100%;
 
 }
 
 .navbar {
-	background-color: #3fbf80;
-	border-bottom: 1px solid #2c8559;
-	padding-left: 33px;
-	padding-right: 33px;
+  background-color: #3fbf80;
+  border-bottom: 1px solid #2c8559;
+  padding-left: 33px;
+  padding-right: 33px;
 
-	a {
-	font-family: 'Futura', Helvetica, Arial, sans-serif;
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: color 300ms;
-	-webkit-transition: color 300ms;
-	-moz-transition: color 300ms;
-	}
+  a {
+  font-family: 'Futura', Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 300ms;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  }
 
-	a:active, a:hover {
-	color: #bf3f7e;
-	background-color: transparent; 
-	}	
+  a:active, a:hover {
+  color: #bf3f7e;
+  background-color: transparent; 
+  } 
 }
 
 .navbar-inverse .navbar-nav li a {
@@ -47,18 +47,18 @@ body {
 
 
 .navbar-form.navbar-left {
-	margin: 0px;
-	padding: 8px;
+  margin: 0px;
+  padding: 8px;
 }
 
 #nav-form-control {
-	margin: 0px;
-	padding: 10px;
+  margin: 0px;
+  padding: 10px;
 }
 
 .projectName a:hover,
 #rightul a:hover {
-	color: #2c8559;
+  color: #2c8559;
 }
 
 .header {
@@ -69,17 +69,17 @@ body {
 }
 
 footer {
-	position: fixed;
-	left:0px;
+  position: fixed;
+  left:0px;
   bottom:0px;
   height:40px;
   width:100%;
-	margin-top: 10px;
-	padding: 10px;
-	background-color: #dcf4e9;
-	color: black;
-	font-family: Georgia, 'Cambria', serif;
-	text-align: right;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #dcf4e9;
+  color: black;
+  font-family: Georgia, 'Cambria', serif;
+  text-align: right;
 }
 
 h1,
@@ -93,14 +93,14 @@ h4 {
 
 p,
 li {
-	font-family: Georgia, 'Cambria', serif;
+  font-family: Georgia, 'Cambria', serif;
 }
 
 p {
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: 0px;
-	margin-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 ul, menu, dir {
@@ -111,7 +111,7 @@ ul, menu, dir {
 // Index
 
 #smoothiethecat008 {
-	margin: auto;
+  margin: auto;
 
 }
 
@@ -119,34 +119,34 @@ ul, menu, dir {
 // Contact
 
 #contact-info {
-	margin-bottom: 40px;
-	padding-left: 15px;
-	p {
-	margin: 0px;
-	text-align: center;
-	}
-	h4:first-child {
-	margin-top: 0px;
-	}
+  margin-bottom: 40px;
+  padding-left: 15px;
+  p {
+  margin: 0px;
+  text-align: center;
+  }
+  h4:first-child {
+  margin-top: 0px;
+  }
 }
 
 list-group-item-text {
-	display: block;
-	overflow: hidden;
+  display: block;
+  overflow: hidden;
 }
 
 // Forms
 
 .form-group {
-	padding: 0px;
+  padding: 0px;
 }
 
 .form-control {
-	width: 100%;
+  width: 100%;
 }
 
 #contactFormContainer {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 #contactForm 
@@ -158,57 +158,57 @@ margin-bottom: 10px;
 }
 
 #name2 {
-	padding-left: 0px;
-	padding-right: 15px;
-	width: 50%;
+  padding-left: 0px;
+  padding-right: 15px;
+  width: 50%;
 }
 
 #phone2 {
-	padding: 0px;
-	width: 40%;
+  padding: 0px;
+  width: 40%;
 }
 
 #email2 {
-	padding: 0px;
-	width: 50%;
+  padding: 0px;
+  width: 50%;
 }
 
 .btn-info {
-	background-color: #3fbf80;
-	border-color: #2c8559;
-	margin-bottom: 20px;
+  background-color: #3fbf80;
+  border-color: #2c8559;
+  margin-bottom: 20px;
 }
 
 .btn-info:hover {
-	background-color: #2c8559;
+  background-color: #2c8559;
 }
 
 // About
 
 #about-sidebar {
-	margin: 20px 0px 10px 0px;
-	padding-left: 15px;
-	font-family: 'Futura', Helvetica, Arial, sans-serif;
+  margin: 20px 0px 10px 0px;
+  padding-left: 15px;
+  font-family: 'Futura', Helvetica, Arial, sans-serif;
 }
 
 .list-group-item.active, .list-group-item.active:focus {
-	background-color: #3fbf80;
+  background-color: #3fbf80;
 }
 
 .list-group-item.active:hover {
-	background-color: #2c8559;
+  background-color: #2c8559;
 }
 
 #about-text h3 {
-	text-align: left;
-	padding-left: 15px;
-	padding-right: 15px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 // Shop
 
 .product_box {
-	border: solid black 1px;
+  border: solid black 1px;
 }
 
 
@@ -223,7 +223,7 @@ margin-bottom: 10px;
 }
 
 #sign-in-email {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .checkbox, .radio {
@@ -244,7 +244,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 #user_email {
-	margin-bottom: -1px;
+  margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
  }
@@ -258,7 +258,7 @@ input[type=checkbox], input[type=radio] {
 // divs
 #sign-in-email,
 #sign-up-email {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 
@@ -266,25 +266,25 @@ input[type=checkbox], input[type=radio] {
 .form-signin .form-control,
 .form-signup .form-control,
 .form-edit-pass .form-control {
-	position: relative;
-	height: auto;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 10px;
-	font-size: 16px;
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
 }
 
 h2.form-signin-heading,
 h2.form-signup-heading,
 h2.form-edit-pass-heading,
 h3.form-edit-pass-heading, {
-	text-align: left;
+  text-align: left;
 }
 
 .btn-primary {
-	background-color: #3fbf80;
-	border-color: #2c8559;
+  background-color: #3fbf80;
+  border-color: #2c8559;
 }
 
 .btn-primary:active,
@@ -292,7 +292,7 @@ h3.form-edit-pass-heading, {
 .btn-primary:active:focus,
 .btn-primary:hover,
 .btn-primary:focus  {
-	background-color: #2c8559;
+  background-color: #2c8559;
 }
 
 h4.edit-pass-email {
@@ -308,57 +308,57 @@ h4.edit-pass-email {
 // Products page
 
 .product_box {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .product_box_description {
-	* {
-		text-align: center;	
-	}
-	p {
-		padding: 5px;
-		margin: 5px;
-	}
+  * {
+    text-align: center; 
+  }
+  p {
+    padding: 5px;
+    margin: 5px;
+  }
 }
 
 // Product Show page
 
 .product_info_box {
-	p {
-		padding: 0px;
-		margin: 10px 0px 5px 0px;
-	}
+  p {
+    padding: 0px;
+    margin: 10px 0px 5px 0px;
+  }
 }
 
 #productPrice {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .product_quantity { 
-	width: 106px;
-	margin-bottom: 10px;
+  width: 106px;
+  margin-bottom: 10px;
 }
 
 .reviews_area {
-	p {
-		padding: 0px;
-		margin: 10px 0px 5px 0px;
-	}
+  p {
+    padding: 0px;
+    margin: 10px 0px 5px 0px;
+  }
 }
 
 .product-reviews-pagination {
-	margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .product_review {
-	border: 1px solid black;
+  border: 1px solid black;
 }
 
 .new_comment {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .submit_comment {
-	margin-top: 10px;
-	
+  margin-top: 10px;
+  
 }
