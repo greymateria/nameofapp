@@ -34,10 +34,9 @@
 
 
 		<!-- where the view files are rendered inside the layout -->
-    <%= yield %>
-
-    <br>
-		
+		<div class ="rendered-content">
+    	<%= yield %>
+		</div>
 
 		<footer>
 		  <%= link_to "Click for redirect_to :back", @some_action %>
