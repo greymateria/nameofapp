@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
+  post 'payments/create'
+
   # added in 4.3 for app/views/orders
   resources :orders, only: [:index, :show, :create, :destroy] 
 
