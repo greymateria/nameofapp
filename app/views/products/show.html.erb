@@ -1,75 +1,75 @@
 <!-- new code in testing for show.html.erb page -->
 <div class="container-fluid anchor" id="product-columns">
-	<div class="row">
+  <div class="row">
 
-		<div class="col-xs-12 col-sm-4 col-md-6 product_image_box">
-		  <%= link_to image_tag(@product.image_url, class: "img-responsive"), @product %>			
-		</div><!-- /.product_image_box -->
+    <div class="col-xs-12 col-sm-4 col-md-6 product_image_box">
+      <%= link_to image_tag(@product.image_url, data_zoom_image: @product.image_url, class: "img-responsive img-zoom"), @product %>     
+    </div><!-- /.product_image_box -->
 
-		<div class="col-xs-12 col-sm-8 col-md-6 product_info_box">
+    <div class="col-xs-12 col-sm-8 col-md-6 product_info_box">
 
-		  <div id="productName">
-				<h2><%= @product.name %></h2>		
-			</div>
+      <div id="productName">
+        <h2><%= @product.name %></h2>   
+      </div>
 
-			<div class="row"><!-- row level 2 -->
-				<div class="col-xs-12 col-sm-6 col-md-6">
-
-
-					<div id="productPrice">
-						<h4>Price: <%= @product.price %></h4>
-					</div>
+      <div class="row"><!-- row level 2 -->
+        <div class="col-xs-12 col-sm-6 col-md-6">
 
 
-					<p><strong>Average Rating: </strong><div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+          <div id="productPrice">
+            <h4>Price: <%= @product.price %></h4>
+          </div>
 
-					<p><strong>Colour: </strong><%= @product.colour %></p>
+
+          <p><strong>Average Rating: </strong><div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
+          <p><strong>Colour: </strong><%= @product.colour %></p>
 
 
-					<p><strong>Description: </strong><%= @product.description %></p>
+          <p><strong>Description: </strong><%= @product.description %></p>
 
-					<%= form_tag "/payments/create" do %>
-  					<%= render partial: "shared/stripe_checkout_button" %>
-  					<%= hidden_field_tag(:product_id, @product.id) %>
-					<% end %>
-				</div>	
+          <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+            <%= hidden_field_tag(:product_id, @product.id) %>
+          <% end %>
+        </div>  
 <!-- 
-				<div class="col-xs-12 col-sm-6 col-md-6">
-					<h3>Quantity:</h3>
-					<select class="form-control product_quantity">
-					  <option>1</option>
-					  <option>2</option>
-					  <option>3</option>
-					  <option>4</option>
-					  <option>5</option>
-					</select>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h3>Quantity:</h3>
+          <select class="form-control product_quantity">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
 
-				  <button class="btn btn-default" type="submit">Add to Cart</button>
-				</div> 
+          <button class="btn btn-default" type="submit">Add to Cart</button>
+        </div> 
 -->
 
 
-			<!-- added in 5.8 -->
-			<div class="col-xs-12 col-sm-12 col-md-12 container-fluid">
+      <!-- added in 5.8 -->
+      <div class="col-xs-12 col-sm-12 col-md-12 container-fluid">
 
-			  <!-- _new_comment partial -->
+        <!-- _new_comment partial -->
 
-	        <%= render(:partial => "new_comment") %>
+          <%= render(:partial => "new_comment") %>
 
-	     </div><!-- /.container-fluid --> 
+       </div><!-- /.container-fluid --> 
     </div><!-- /.product_info_box --></div><!-- /.row level 1 -->
       
-	</div><!-- /.row level 1 -->		
+  </div><!-- /.row level 1 -->    
 
 
 
 
-</div><!-- /#product-columns -->		
+</div><!-- /#product-columns -->    
 
 
 
 <div class="col-xs-12 reviews_area">
-	<h3>User reviews</h3>
+  <h3>User reviews</h3>
 
   <!-- _comments partial -->
   <div class="comments_partial">
@@ -77,8 +77,8 @@
   </div><!-- /.comments_partial -->
 
   <div class="product-reviews-pagination">
-  	<%= will_paginate @comments %>
-	</div>
+    <%= will_paginate @comments %>
+  </div>
 
 </div>  
 

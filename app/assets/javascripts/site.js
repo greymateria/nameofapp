@@ -10,6 +10,16 @@ var refreshRating = function() {
 
 $(document).on('turbolinks:load', function() {
 	refreshRating(); 
+
+  $('.img-zoom').elevateZoom({
+    zoomType: "lens",
+    lensShape: "round",
+    lensSize: 200,
+		lensFadeIn: 300,
+		lensFadeOut: 500
+  });
+
+
 });
 
 // old version
