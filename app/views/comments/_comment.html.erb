@@ -1,6 +1,4 @@
-<div class="product-reviews">
-  <% @comments.each do |comment| %>
-  	<div class="row">
+<div class="row">
 		  <hr>
 		  <p>
 				<!-- issues occured because first_name was never received on the registration form -->
@@ -12,6 +10,3 @@
 		  <div class="rated" data-score="<%= comment.rating %>"></div>
 			  <p><%= comment.body %></p>
 			</div>
-		<% end %>
-</div>
- 
