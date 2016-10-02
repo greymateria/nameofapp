@@ -71,6 +71,9 @@
 <div class="col-xs-12 reviews_area">
   <h3>User reviews</h3>
 
+<!-- alert to sub user that a new comment has been added -->
+  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
   <!-- _comments partial -->
   <div class="comments_partial">
     <%= render(:partial => "comments") %>

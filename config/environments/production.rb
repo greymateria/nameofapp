@@ -95,5 +95,8 @@ Rails.application.configure do
                        :down_retry_delay => 60
                       }
 
+  config.web_socket_server_url = "wss://rbrailsdemo.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://rbrailsdemo.herokuapp.com', 'http://rbrailsdemo.herokuapp.com']
+
 end
 
