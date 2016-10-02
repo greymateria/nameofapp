@@ -76,3 +76,9 @@ gem 'stripe'
 
 # Dalli for Memcache client
 gem 'dalli'
+
+# Redis
+gem 'redis-rails'
+
+# New Relic
+gem 'newrelic_rpm'
