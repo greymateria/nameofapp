@@ -7,7 +7,7 @@
     </div><!-- /.product_image_box -->
 
     <div class="col-xs-12 col-sm-8 col-md-6 product_info_box">
-
+    <% cache @product do %>
       <div id="productName">
         <h2><%= @product.name %></h2>   
       </div>
@@ -27,11 +27,11 @@
 
 
           <p><strong>Description: </strong><%= @product.description %></p>
-
+          <% end %>
           <%= form_tag "/payments/create" do %>
             <%= render partial: "shared/stripe_checkout_button" %>
             <%= hidden_field_tag(:product_id, @product.id) %>
-          <% end %>
+    <% end %>
         </div>  
 <!-- 
         <div class="col-xs-12 col-sm-6 col-md-6">

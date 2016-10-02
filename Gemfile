@@ -74,3 +74,5 @@ gem 'rails-controller-testing'
 # Stripe - cc payments
 gem 'stripe'
 
+# Dalli for Memcache client
+gem 'dalli'
