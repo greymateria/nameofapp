@@ -1,6 +1,6 @@
 <!-- new code in testing for show.html.erb page -->
 <div class="container-fluid anchor" id="product-columns">
-  <div class="row">
+  <div class="row" data-product-id="<%= @product.id %>">
 
     <div class="col-xs-12 col-sm-4 col-md-6 product_image_box">
       <%= link_to image_tag(@product.image_url, data_zoom_image: @product.image_url, class: "img-responsive img-zoom"), @product %>     
