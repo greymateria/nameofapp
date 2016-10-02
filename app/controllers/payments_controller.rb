@@ -15,6 +15,7 @@ class PaymentsController < ApplicationController
 
     if charge.paid
     	Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
+      UserMailer.welcome(@user).deliver_now
     end
  		flash[:success] = "Your payment has been processed"
 
