@@ -27,6 +27,8 @@ Rails.application.routes.draw do
 
   # ActionCable for pub/sub
   mount ActionCable.server => '/cable'
+  resource  :session
+  resources :examples
 
 end
  
